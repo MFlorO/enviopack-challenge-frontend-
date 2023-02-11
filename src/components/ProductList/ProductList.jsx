@@ -19,8 +19,10 @@ const ProductList = () => {
         <img src={imagen} alt={title} />
         <h5>{title}</h5>
         <p>${price}</p>
+        <div className={styles.subcontainer3}>
         {productFind ? (<button onClick={() => navigate("/shopping")}>Ver Carrito</button>) 
         : (<button onClick={() => addCar(productFilterAdd)}>Agregar al carrito</button>)}
+        </div>
       </div>
     );
   });
