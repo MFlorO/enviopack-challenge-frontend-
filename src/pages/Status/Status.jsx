@@ -1,5 +1,5 @@
 import { NavBar } from "../../components/NavBar";
-import AlertShopping from "./AlertShopping";
+import AlertShopping from "../../components/AlertShopping/AlertShopping";
 import styles from "./Status.module.css";
 import useHookShopping from "~/Hooks/useHookShopping";
 import { useUser } from "~/Hooks/useHookUser";

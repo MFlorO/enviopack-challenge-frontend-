@@ -15,6 +15,9 @@ const Car = () => {
       <h1>Carrito</h1>
 
       <ul className={styles.containar2sub1}>
+
+        {shopping?.length === 0 && "NO HAY PRODUCTOS CARGADOS EN EL CARRITO" }
+
         {local?.map((s) => {
           const { id, title, price } = s;
           return (
