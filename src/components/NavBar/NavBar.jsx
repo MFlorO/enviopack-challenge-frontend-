@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <div className={styles.conteiner}>
       <div className={styles.subconteiner1}>
-        <Link className={styles.link} to="/catalogue">Tienda de productos</Link>
+        <Link className={styles.link} to="/">Tienda de productos</Link>
       </div>
       <div className={styles.subconteiner2}>
         <h3>{firstName}</h3>

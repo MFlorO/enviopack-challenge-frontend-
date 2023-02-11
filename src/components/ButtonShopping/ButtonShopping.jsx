@@ -5,7 +5,7 @@ const ButtonShopping = () => {
 
   return (
     <>
-      <button onClick={() => navigate("/catalogue")}>Volver al catálogo</button>
+      <button onClick={() => navigate("/")}>Volver al catálogo</button>
       <button onClick={() => navigate("/status")}>Finalzar Compra</button>
     </>
   );

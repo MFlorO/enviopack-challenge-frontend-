@@ -1,4 +1,3 @@
-export { default as Home } from './Home/Home';
 export * from './Ruta404';
 export * from './Shopping';
 export { default as Status } from './Status/Status';

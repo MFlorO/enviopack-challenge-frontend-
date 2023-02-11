@@ -26,7 +26,7 @@ const Status = () => {
         <AlertShopping
           texto={"La compra se realizo con exito"}
           button={"Volver al catálogo"}
-          funcion={"/catalogue"}
+          funcion={"/"}
         />
       )}
     </div>
