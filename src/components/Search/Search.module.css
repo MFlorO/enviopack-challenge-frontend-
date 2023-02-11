@@ -1,0 +1,14 @@
+
+.conteiner{
+    margin-top: 1.5rem;
+}
+
+.conteiner input{
+    border: 1px solid #c5c8cd;
+    background-color: #F2F2F2;
+    color: #7e7f80;
+    width: 22rem;
+    height: 2.5rem;
+    font-size: 18px;
+    padding-left: 1rem;
+}

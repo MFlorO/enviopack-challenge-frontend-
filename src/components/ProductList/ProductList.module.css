@@ -1,0 +1,52 @@
+.container {
+    margin-top: 2rem;
+    width: 40rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto); 
+    grid-gap: 30px 30px; 
+}
+
+.subcontainer2{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  width: 25rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.232) 0px 2px 6px 3px;
+}
+
+.subcontainer2 img{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  height: 18rem;
+  width: 13rem;
+}
+
+.subcontainer2 h5{
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.subcontainer2 p{
+  margin-bottom: 1.5rem;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+.subcontainer2 button{
+  width: 100%;
+  height: 100%;
+  background-color:black;
+  color: rgb(220, 217, 217);
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}

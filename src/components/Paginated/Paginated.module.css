@@ -1,0 +1,23 @@
+.conteiner{
+    display: flex;
+    width: 10%;
+    margin-left: 35rem;
+    justify-content: space-between;
+}
+
+.conteiner button{
+    padding: 0 1rem;
+    width: max-content;
+    height: 2.8rem;
+    background-color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.conteiner button hover{
+    background-color: black !important;
+    color: rgb(220, 217, 217) !important;
+}
+
