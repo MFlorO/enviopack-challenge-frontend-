@@ -31,7 +31,7 @@ export const UserProvider = ({ children }) =>{
   const seteCar = () => setUserState({userState,shopping: []})
  
 
-  const countCar = () => JSON.parse(localStorage.getItem("carrito"))?.length
+  const countCar = () => userState.shopping?.length
 
   
   return <UserContext.Provider value={{ userState,setUserState, addCar, deleteCar, seteCar, countCar }}>{children}</UserContext.Provider>
