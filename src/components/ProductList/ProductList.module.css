@@ -1,56 +1,56 @@
 .container {
-    margin-top: 2rem;
-    width: 40rem;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3,auto); 
-    grid-gap: 30px 30px; 
+  margin-top: 1rem;
+  width: 53rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  grid-gap: 10px 10px;
 }
 
-.subcontainer2{
-  padding: 1.5rem;
+.subcontainer2 {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 30rem;
-  width: 25rem;
+  height: 21rem;
+  width: 16rem;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.232) 0px 2px 6px 3px;
+  box-shadow: rgba(0, 0, 0, 0.232) 0px 2px 2px 3px;
 }
 
-.subcontainer2 img{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  height: 18rem;
-  width: 13rem;
+.subcontainer2 img {
+  margin-bottom: 0.5rem;
+  height: 13rem;
+  width: 10rem;
 }
 
-.subcontainer2 h5{
+.subcontainer2 h5 {
   margin-bottom: 1rem;
   color: black;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 500;
   text-align: center;
 }
 
-.subcontainer2 p{
-  margin-bottom: 1.5rem;
+.subcontainer2 p {
+  margin-bottom: 1rem;
   color: black;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 500;
 }
 
-.subcontainer3{
+.subcontainer3 {
   min-width: 100%;
-  min-height: 3rem;
+  min-height: 2rem;
 }
 
-.subcontainer3 button{
+.subcontainer3 button {
   min-width: 100%;
   min-height: 100%;
-  background-color:black;
+  background-color: black;
   color: rgb(220, 217, 217);
-  font-size: 17px;
+  font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
 }

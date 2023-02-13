@@ -2,15 +2,15 @@
 .conteiner{
     padding: 1rem;
     width: 100%;
-    height: 100vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
 }
 
 .subconteiner{
     padding: 1rem;
-    margin-right: 4rem;
-    width: 65%;
+    margin-right: 2rem;
+    width: 68%;
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -18,15 +18,14 @@
 }
 
 .sub2conteiner{
-    width: 88%;
-    margin-top: 2rem;
+    width: 85%;
 }
 
 .sub2conteiner h1 {
     justify-content: center;
     text-align: center;
-    margin-bottom: 5rem;
-    font-size: 45px;
+    margin-bottom: 2rem;
+    font-size: 38px;
     font-weight: 600
 }
 
