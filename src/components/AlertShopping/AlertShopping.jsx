@@ -7,10 +7,10 @@ import styles from "./AlertShopping.module.css"
 const AlertShopping = ({ texto, button, funcion }) => {
   const navigate = useNavigate();
 
-  const [, , , seteCar] = useCar();
+  const [, , , setCar] = useCar();
 
   useEffect(() => {
-    texto === "La compra se realizo con exito" && seteCar()
+    texto === "La compra se realizo con exito" && setCar()
   }, [])
 
 

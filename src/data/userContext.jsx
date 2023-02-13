@@ -11,13 +11,16 @@ export const UserProvider = ({ children }) =>{
 
   useEffect(() => {
     setUserState( {...profile.profile, shopping: JSON.parse(localStorage.getItem("carrito")) || []})
+
+    console.log("userState-useEffect:",userState.firstName)
   }, [])
 
   useEffect(() => {
     if(userState.shopping !== undefined) {
       localStorage.setItem("carrito", JSON.stringify(userState.shopping))
+      console.log("userState-useEffect2:",userState.firstName)
     }
-  },[userState.shopping]);
+  },[userState]);
     
   const addCar = (obj) => setUserState({...userState,shopping: userState.shopping.concat(obj)})
   
@@ -28,13 +31,13 @@ export const UserProvider = ({ children }) =>{
     setUserState({...userState,shopping: resultado})
   }
 
-  const seteCar = () => setUserState({userState,shopping: []})
- 
+  const setCar = () => setUserState({...userState,shopping: []})
+   
 
   const countCar = () => userState.shopping?.length
 
   
-  return <UserContext.Provider value={{ userState,setUserState, addCar, deleteCar, seteCar, countCar }}>{children}</UserContext.Provider>
+  return <UserContext.Provider value={{ userState,setUserState, addCar, deleteCar, setCar, countCar }}>{children}</UserContext.Provider>
 }
 
 

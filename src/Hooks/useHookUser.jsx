@@ -12,7 +12,7 @@ export const useUser = () => {
 
 
 export const useCar = () => {
-	const {userState:{ shopping }, addCar, deleteCar, seteCar, countCar} =  useUserContext() 
+	const {userState:{ shopping }, addCar, deleteCar, setCar, countCar} =  useUserContext() 
 	                                                           
-	return [shopping, addCar, deleteCar, seteCar, countCar]
+	return [shopping, addCar, deleteCar, setCar, countCar]
 }

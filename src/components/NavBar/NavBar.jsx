@@ -8,6 +8,8 @@ const NavBar = () => {
   const [firstName, credit ] = useUser() 
   const [, , , , countCar] = useCar();
 
+  console.log("firstName-Navbar", firstName)
+
   return (
     <div className={styles.conteiner}>
       <div className={styles.subconteiner1}>
