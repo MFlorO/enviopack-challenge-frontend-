@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
 
   const [firstName, credit ] = useUser() 
-  const [shopping] = useCar();
+  const [, , , , countCar] = useCar();
 
   return (
     <div className={styles.conteiner}>
@@ -15,7 +15,7 @@ const NavBar = () => {
       </div>
       <div className={styles.subconteiner2}>
         <h3>{firstName}</h3>
-        <Link className={styles.link} to="/shopping">Carrito({shopping?.length})</Link>
+        <Link className={styles.link} to="/shopping">Carrito({countCar()})</Link>
         <h3>Credito $ {credit}</h3>
       </div>
     </div>

@@ -5,15 +5,14 @@ import { useUserContext } from "~/data/userContext";
 
 
 export const useUser = () => {
-	const {userState:{ firstName, credit, shopping }} =  useUserContext() 
+	const {userState:{ firstName, credit, shopping }, setUserState} =  useUserContext() 
 	                                                                     
-	return [firstName, credit, shopping]
+	return [firstName, credit, shopping, setUserState]
 }
 
 
 export const useCar = () => {
-	const {userState:{ shopping }, addCar, deleteCar} =  useUserContext() 
+	const {userState:{ shopping }, addCar, deleteCar, seteCar, countCar} =  useUserContext() 
 	                                                           
-	return [shopping, addCar, deleteCar]
+	return [shopping, addCar, deleteCar, seteCar, countCar]
 }
-

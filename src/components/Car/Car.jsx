@@ -3,22 +3,19 @@ import { useCar } from "~/Hooks/useHookUser";
 import useHookShopping from "~/Hooks/useHookShopping";
 import imagen from "~/assets/image-product.jpg";
 
-
 const Car = () => {
-
   const [shopping, , deleteCar] = useCar();
-  const local = JSON.parse(localStorage.getItem("carrito"));
+
 
   return (
     <>
-   
       <h1>Carrito</h1>
 
       <ul className={styles.containar2sub1}>
 
         {shopping?.length === 0 && "NO HAY PRODUCTOS CARGADOS EN EL CARRITO" }
 
-        {local?.map((s) => {
+        {shopping?.map((s) => {
           const { id, title, price } = s;
           return (
             <li key={id} >   
@@ -30,8 +27,6 @@ const Car = () => {
                 <p>$ {price}</p>
                 <button onClick={() => deleteCar(id)}>X</button>
               </div>
-
-
             </li>
           );
         })}
