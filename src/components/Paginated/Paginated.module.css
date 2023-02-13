@@ -9,6 +9,7 @@
     width: 2rem;
     height: 2rem;
     background-color: white;
+    border: 1px solid #d4d4d4;
     font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -19,4 +20,6 @@
     background-color: black !important;
     color: rgb(220, 217, 217) !important;
 }
+
+
 
