@@ -1,4 +1,5 @@
 import not from "../../assets/404.jpg"
+import style from "./Ruta404.module.css"
 
 const Ruta404 = () => {
   
