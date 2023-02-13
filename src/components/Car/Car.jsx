@@ -21,7 +21,7 @@ const Car = () => {
             <li key={id} >   
               <div className={styles.sub}>
                 <img src={imagen} alt={title} />
-                <h3>{title}</h3>
+                <h4>{title}</h4>
               </div>
               <div className={styles.sub2}>
                 <p>$ {price}</p>
