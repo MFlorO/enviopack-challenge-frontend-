@@ -4,7 +4,7 @@ import style from "./Ruta404.module.css"
 const Ruta404 = () => {
   
   return (
-    <img src={not} alt="404" />
+    < img src={not} alt="404" className={style.imagen}/>
   )
 }
 
