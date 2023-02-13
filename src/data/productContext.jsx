@@ -13,7 +13,7 @@ export const ProductProvider = ({ children }) => {
       setProductState(products.productos);
       setProductCopia(products.productos);
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
 
