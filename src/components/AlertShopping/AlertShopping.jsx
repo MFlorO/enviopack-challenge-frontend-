@@ -6,18 +6,19 @@ import styles from "./AlertShopping.module.css"
 
 const AlertShopping = ({ texto, button, funcion }) => {
   const navigate = useNavigate();
-
-  const [, , , setCar] = useCar();
+  const [, , , countCredit] = useCar();
+ 
 
   useEffect(() => {
-    texto === "La compra se realizo con exito" && setCar()
-  }, [])
-
+    if(texto === "La compra se realizo con exito"){
+      countCredit()
+    } 
+  }, [texto])
 
   return (
     <div className={styles.container}>
       <h3>{texto}</h3>
-      <button onClick={() => navigate(funcion)}>{button}</button>
+      <button onClick={ () => navigate(funcion)}>{button}</button>
     </div>
   );
 };

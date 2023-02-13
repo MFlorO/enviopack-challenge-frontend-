@@ -8,15 +8,15 @@ import { useUser } from "~/Hooks/useHookUser";
 
 const Status = () => {
 
-  const [, credit] = useUser()
+  // const [, credit] = useUser()
   
 
   return (
     <div className={styles.conteiner}>
       <NavBar />
       <h1>Estado de la Compra</h1>
-
-      {credit <= useHookShopping() ? (
+      
+      {JSON.parse(localStorage.getItem("credit")) < useHookShopping() ? (
         <AlertShopping
           texto={"Ocurrio un error con la compra, revisá que el importe no supere el crédito disponible en tu cuenta"}
           button={"Volver al carrito"}
